@@ -1,0 +1,44 @@
+{
+  "name": "vacuum-packer",
+  "version": "0.0.1",
+  "description": "lightweight rollup zipper for makeshift-ctrl plugins",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "vacuum-packer": "./bin/vacuum-packer.js"
+  },
+  "scripts": {
+    "vac": "tsc && node ./bin/vacuum-packer",
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EosFoundry/vacuum-packer.git"
+  },
+  "keywords": [
+    "rollup"
+  ],
+  "author": "James Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EosFoundry/vacuum-packer/issues"
+  },
+  "homepage": "https://github.com/EosFoundry/vacuum-packer#readme",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^23.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^9.0.1",
+    "acorn-walk": "^8.2.0",
+    "chalk": "^5.1.2",
+    "espree": "^9.4.0",
+    "rollup": "^2.79.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/estree": "^1.0.0",
+    "@types/node": "^18.11.0"
+  }
+}
