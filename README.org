@@ -1,0 +1,8 @@
+* vacuum-packer
+
+Plugin helper for [[https://github.com/EosFoundry/makeshift-ctrl][makeshift-ctrl]], it does four things and four things only:
+
+1. Builds the package into a single file using [[https://rollupjs.org/guide/en/][rollup]]
+2. Hashes the file and shoves it into manifest.json
+3. Extracts function names from the entry point and dumps it into a manifest.json
+4. Zips everything up

@@ -8,7 +8,6 @@
     "vacuum-packer": "./bin/vacuum-packer.js"
   },
   "scripts": {
-    "vac": "tsc && node ./bin/vacuum-packer",
     "dev": "rollup -c -w",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +17,7 @@
     "url": "git+https://github.com/EosFoundry/vacuum-packer.git"
   },
   "keywords": [
+    "makeshift",
     "rollup"
   ],
   "author": "James Liu",
