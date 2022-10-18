@@ -3,7 +3,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
-  input: '<PluginMain>.js',
+  input: '<PluginMain>',
   output: {
     file: './<PluginName>.mkshftpb.js',
     format: 'module'

@@ -3,6 +3,7 @@ export type Manifest = {
     version: string,
     functions: PluginCallable[]
 }
+
 export type PluginCallable = {
     identifier: string,
     params: [{
