@@ -72,6 +72,7 @@ const ast: Program = espreeParse(sourceString, parseOptions);
 
 // check if there is a rollup.config.js file in the project already
 const pluginHasRollupConf = existsSync(join(workingDir, 'rollup.config.js'))
+msg(`rollupconf existence: ${pluginHasRollupConf}`)
 
 /**
  * walks through the AST to extract all the exports
@@ -162,7 +163,7 @@ msg(`Wrote 'manifest.json' to ${chalk.yellow('\'' + join(workingDir, 'manifest.j
 
 
 // if the project doesn't come with a rollup config, pull up the template
-if (pluginHasRollupConf) {
+if (pluginHasRollupConf === false) {
   let rollupConf = pullFile(vacpacDir, 'rollup.template.js')
   const rollupNameRegex = /<PluginName>/g
   const rollupMainRegex = /<PluginMain>/g
