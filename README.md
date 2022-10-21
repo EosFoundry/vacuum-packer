@@ -22,13 +22,16 @@ npm install --global @eos-makeshift/vacuum-packer
 
 ## Usage
 
-Run through `npx` or `npm exec`
+Run through `npx` or `npm exec` if not installed globally
 
 ```sh
 npx vacuum-packer
 ```
 
-## Something Is Busted!
+## Using a Custom Configuration
 
 vacuum-packer does some string-replacement on a default configuration file and saves it to your project root as `rollup.config.js`, and it will always use the generated file afterwards. If your plugin requires something more specific, you should edit the generated `rollup.config.js` to accomodate - see [rollup documentation](https://www.rollupjs.org/guide/en/) for specifics on how to do so.
 
+## Known Issues
+
+rollup is known to not play well with platform specific code, join the [discord server](https://discord.gg/hPw4j3vfCT) discussion about this issue
