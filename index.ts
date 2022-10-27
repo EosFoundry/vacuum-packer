@@ -1,5 +1,4 @@
 // types
-import { Manifest, PluginCallable } from './types/global';
 import {
   FunctionDeclaration,
   Comment,

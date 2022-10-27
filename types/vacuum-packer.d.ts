@@ -1,10 +1,10 @@
-export type Manifest = {
+type Manifest = {
     name: string,
     version: string,
     functions: PluginCallable[]
 }
 
-export type PluginCallable = {
+type PluginCallable = {
     identifier: string,
     params: [{
         name: string,

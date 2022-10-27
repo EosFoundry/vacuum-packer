@@ -2,7 +2,6 @@ import { FunctionDeclaration, Comment } from 'estree'
 
 import { inspect } from 'node:util';
 import chalk from 'chalk';
-import { PluginCallable } from '../types/global';
 
 const msg = console.log
 
