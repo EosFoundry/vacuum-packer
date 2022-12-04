@@ -6,7 +6,7 @@ export default {
   input: '<PluginMain>',
   output: {
     file: './<PluginName>.mkshftpb.js',
-    format: 'module'
+    format: 'cjs'
   },
   plugins: [
     nodeResolve({

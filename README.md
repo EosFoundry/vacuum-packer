@@ -36,3 +36,6 @@ vacuum-packer does some string-replacement on a default configuration file and s
 ## Known Issues
 
 rollup is known to not play well with platform-specific code, join the [discord server](https://discord.gg/hPw4j3vfCT) if you would like to discuss this issue
+
+
+TODO: fix example copy-pasta
