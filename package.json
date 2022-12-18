@@ -1,6 +1,6 @@
 {
   "name": "@eos-makeshift/vacuum-packer",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "lightweight rollup zipper for makeshift-ctrl plugins",
   "main": "index.js",
   "type": "module",
