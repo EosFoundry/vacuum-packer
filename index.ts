@@ -166,9 +166,11 @@ if (pluginHasRollupConf === false) {
   let rollupConf = pullFile(vacpacDir, 'rollup.template.js')
   const rollupNameRegex = /<PluginName>/g
   const rollupMainRegex = /<PluginMain>/g
+  const main = packageJson.main.replace('/','_');
 
   rollupConf = rollupConf.replace(rollupNameRegex, packageJson.name)
   rollupConf = rollupConf.replace(rollupMainRegex, packageJson.main)
+
   let rollupFileMsg = `Modifying default rollup config file...\n`
     + chalk.yellow(join(vacpacDir, `rollup.template.js`))
     + `\n---\n${rollupConf}`
