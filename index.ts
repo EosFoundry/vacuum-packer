@@ -169,7 +169,7 @@ if (pluginHasRollupConf === false) {
   const main = packageJson.main.replace('/','_');
 
   rollupConf = rollupConf.replace(rollupNameRegex, packageJson.name)
-  rollupConf = rollupConf.replace(rollupMainRegex, packageJson.main)
+  rollupConf = rollupConf.replace(rollupMainRegex, main)
 
   let rollupFileMsg = `Modifying default rollup config file...\n`
     + chalk.yellow(join(vacpacDir, `rollup.template.js`))
